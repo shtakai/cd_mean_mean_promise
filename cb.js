@@ -16,6 +16,7 @@ buyDonut();
 console.log('-----');
 // callback example
 function buyDonut2(){
+    console.log('orderdonut2++++++');
   orderDonut2( () => {
     console.log('buyDonut2:pay');
     console.log('buyDonut2:walk out door');
@@ -27,6 +28,7 @@ function orderDonut2(callback){
   let x = setTimeout( () => {
     console.log('orderDonut2:donut is on counter');
     callback();
+    console.log('++++++');
   }, 1000 );
 }
 
